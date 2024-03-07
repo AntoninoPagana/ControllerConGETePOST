@@ -10,12 +10,12 @@ public class NameController {
     private NameServices nameServices;
 
     @GetMapping("ritornaNome")
-    public String ritornaNome(@RequestParam String nomeDaRitornare) {
-        return nameServices.ritornaNome(nomeDaRitornare);
+    public String ritornaNome(@RequestParam String nome) {
+        return nome;
     }
 
     @PostMapping("ritornaNomeAlContrario")
-    public StringBuilder ritornaNomeAlContrario(@RequestParam StringBuilder nomeDaRitornareAlContrario) {
-        return nameServices.ritornaNomeAlContrario(nomeDaRitornareAlContrario);
+    public StringBuilder ritornaNomeAlContrario(@RequestParam StringBuilder nome) {
+        return nameServices.ritornaNomeAlContrario(nome);
     }
 }
